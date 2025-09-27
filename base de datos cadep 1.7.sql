@@ -394,6 +394,12 @@ CREATE TABLE sections (
 CREATE TABLE siteConfig (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     id_section_SiteConfig INT,
+    `key` VARCHAR(255) NOT NULL,
+    `type` VARCHAR(255),
+    `value` TEXT,
+    `description` TEXT,
+    is_active TINYINT(1) NOT NULL DEFAULT 1,
+    `order` INT DEFAULT 0,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     
