@@ -2,7 +2,7 @@
 CREATE DATABASE IF NOT EXISTS db_cadep;
 USE db_cadep;
 
--- NOTA: Las tablas se borran en orden inverso para evitar errores de dependencias (claves for·neas)
+-- NOTA: Las tablas se borran en orden inverso para evitar errores de dependencias (claves for√°neas)
 DROP TABLE IF EXISTS tokens;
 DROP TABLE IF EXISTS structureappointments;
 DROP TABLE IF EXISTS weeks;
@@ -404,7 +404,7 @@ BEGIN
 END$$
 DELIMITER ;
 
--- Õndices para mejorar el rendimiento de las consultas
+-- √çndices para mejorar el rendimiento de las consultas
 CREATE INDEX idx_email_donor ON donors (email_donor);
 CREATE INDEX idx_email_registereddonor ON registereddonors (email_registereddonor);
 CREATE INDEX idx_username_registereddonor ON registereddonors (username_registereddonor);
